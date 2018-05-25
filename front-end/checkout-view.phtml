@@ -1,0 +1,77 @@
+<?php 
+require_once 'conexao/conexao.php';
+//Iniciar sessao
+session_start();
+
+if (!isset($_SESSION['user_portal'])) {
+    header('location:login.php');
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Up Style Fashion | Checagem</title>
+</head>
+<body>
+<!--header-->
+<?php include '../front-end/header.php'; ?>
+<!--/header-->
+<!---->
+<div class="container">
+	<div class="check-out">
+		<h1>Confirmação</h1>
+    	    <table >
+		  <tr>
+			<th>Item</th>
+			<th>Qtd</th>		
+			<th>Preço</th>
+			<th>Detalhes de entrega</th>
+			<th>Subtotal</th>
+		  </tr>
+		  <tr>
+			<td class="ring-in"><a href="../front-end/detalhe.php" class="at-in"><img src="../front-end/images/ce.jpg" class="img-responsive" alt=""></a>
+			<div class="sed">
+				<h5>Sed ut perspiciatis unde</h5>
+				<p>(At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium) </p>
+			
+			</div>
+			<div class="clearfix"> </div></td>
+			<td class="check"><input type="text" value="1" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}"></td>		
+			<td>$100.00</td>
+			<td>FREE SHIPPING</td>
+			<td>$100.00</td>
+		  </tr>
+		  <tr>
+		  <td class="ring-in"><a href="../front-end/single.php" class="at-in"><img src="../front-end/images/ce1.jpg" class="img-responsive" alt=""></a>
+			<div class="sed">
+				<h5>Sed ut perspiciatis unde</h5>
+				<p>(At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium ) </p>
+			</div>
+			<div class="clearfix"> </div></td>
+			<td class="check"><input type="text" value="1" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}"></td>		
+			<td>$200.00</td>
+			<td>FREE SHIPPING</td>
+			<td>$200.00</td>
+		  </tr>
+		  <tr>
+		  <td class="ring-in"><a href="../front-end/single.php" class="at-in"><img src="../front-end/images/ce2.jpg" class="img-responsive" alt=""></a>
+			<div class="sed">
+				<h5>Sed ut perspiciatis unde</h5>
+				<p>(At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium) </p>
+			</div>
+			<div class="clearfix"> </div></td>
+			<td class="check"><input type="text" value="1" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}"></td>		
+			<td>$150.00</td>
+			<td>FREE SHIPPING</td>
+			<td>$150.00</td>
+		  </tr>
+	</table>
+	<a href="#" class=" to-buy">COMPRAR</a>
+	<div class="clearfix"> </div>
+    </div>
+</div>
+<!--footer-->
+<?php include '../front-end/footer.php'; ?>
+<!--/footer-->
+</body>
+</html>

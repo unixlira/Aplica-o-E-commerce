@@ -1,0 +1,197 @@
+<div class="single">
+	<div class="container">
+		<div class="col-md-9">
+			<div class="col-md-5 grid">		
+				<div class="flexslider">
+					<ul class="slides">
+						<li data-thumb="<?php  echo $dados_detalhe['pagina']; ?>">
+							<div class="thumb-image"> <img src="<?php  echo $dados_detalhe['pagina']; ?>" data-imagezoom="true" class="img-responsive"> </div>
+						</li>
+						<li data-thumb="<?php  echo $dados_detalhe['pagina']; ?>">
+							<div class="thumb-image"> <img src="<?php  echo $dados_detalhe['pagina']; ?>" data-imagezoom="true" class="img-responsive"> </div>
+						</li>
+						<li data-thumb="<?php  echo $dados_detalhe['pagina']; ?>">
+						<div class="thumb-image"> <img src="<?php  echo $dados_detalhe['pagina']; ?>" data-imagezoom="true" class="img-responsive"> </div>
+						</li> 
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-7 single-top-in">
+				<div class="single-para simpleCart_shelfItem">
+					<h1 style="font-size:34px;"><?php  echo utf8_encode($dados_detalhe['nome']); ?></h1>
+					<p><?php  echo utf8_encode($dados_detalhe['detalhe']); ?></p>
+					<div class="star-on">
+						<ul>
+							<li><a href="#"><i class="glyphicon glyphicon-star"> </i></a></li>
+							<li><a href="#"><i class="glyphicon glyphicon-star"> </i></a></li>
+							<li><a href="#"><i class="glyphicon glyphicon-star"> </i></a></li>
+							<li><a href="#"><i class="glyphicon glyphicon-star"> </i></a></li>
+							<li><a href="#"><i class="glyphicon glyphicon-star"> </i></a></li>
+						</ul>
+						<div class="review">
+							<a href="#"> 103 avaliações </a>/
+							<a href="#"> Faça uma avaliação</a>
+						</div>
+					<div class="clearfix"> </div>
+					</div>					
+						<label  class="add-to item_price">R$<?php  echo number_format($preco, 2, ',', '.');
+ ?></label>					
+						<div class="available">
+							<h6>Opções disponíveis:</h6>
+							<ul>							
+								<li>Tamanho:
+									<select>
+										<option>Pequeno</option>
+										<option>Médio  </option>
+										<option>Grande </option>							
+									</select>
+								</li>
+							</ul>
+						</div>
+						
+						<a id="comprar" href="../front-end/checkout-view.phtml" class="cart item_add">Comprar</a>
+				</div>
+				<div class="face">
+					<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=450&layout=standard&action=like&size=large&show_faces=false&share=true&height=35&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe><br>
+				</div>	
+		</div>
+		<div class="clearfix"> </div>
+			<div class="content-top1">
+				<div class="row">
+							<div class="col-md-4 col-md3">
+									<div class="col-md1 simpleCart_shelfItem">
+								<a href="detalhe-view.phtml">
+									<img class="img-responsive" src="<?php echo $dados_detalhe['pagina']; ?>" alt="" />
+								</a>
+								<h3><a href="detalhe-view.phtml"><?php echo utf8_encode($dados_detalhe['nome']); ?></a></h3>
+								<div class="price">
+										<h5 class="item_price">R$<?php echo  $dados_detalhe['preco']; ?></h5>
+										<a href="checkout-view.phtml" class="item_add">Comprar</a>
+										<div class="clearfix"> </div>
+								</div>
+							</div>
+						</div>
+					
+				</div>						
+				<div class="clearfix"> </div>
+			</div>		
+		</div>
+		<!----->
+		<div class="col-md-3 product-bottom">
+					<!--categories-->
+						<div class=" rsidebar span_1_of_left">
+								<h3 class="cate">Categorias</h3>
+									<ul class="menu-drop">
+									<li class="item1"><a href="#">Masculino </a>
+										<ul class="cute">
+											<li class="subitem1"><a href="../front-end/detalhe-view.phtml">Lançamentos </a></li>
+											<li class="subitem2"><a href="../front-end/detalhe-view.phtml">Alternativo </a></li>
+											<li class="subitem3"><a href="../front-end/detalhe-view.phtml">Promoção </a></li>
+										</ul>
+									</li>
+									<li class="item2"><a href="#">Feminino </a>
+										<ul class="cute">
+											<li class="subitem1"><a href="../front-end/detalhe-view.phtml">Lançamentos </a></li>
+											<li class="subitem2"><a href="../front-end/detalhe-view.phtml">Alternativo </a></li>
+											<li class="subitem3"><a href="../front-end/detalhe-view.phtml">Promoção </a></li>
+										</ul>
+									</li>
+									<li class="item3"><a href="#">Infantil</a>
+										<ul class="cute">
+											<li class="subitem1"><a href="../front-end/detalhe-view.phtml">Masculino </a></li>
+											<li class="subitem2"><a href="../front-end/detalhe-view.phtml">Feminino </a></li>
+											<li class="subitem3"><a href="../front-end/detalhe-view.phtml">Promoção </a></li>
+										</ul>
+									</li>
+									<li class="item4"><a href="#">Acessórios</a>
+										<ul class="cute">
+											<li class="subitem1"><a href="../front-end/detalhe-view.phtml">Colar e Anel </a></li>
+											<li class="subitem2"><a href="../front-end/detalhe-view.phtml">Relógios </a></li>
+											<li class="subitem3"><a href="../front-end/detalhe-view.phtml">Promoção </a></li>
+										</ul>
+									</li>
+											
+									<li class="item4"><a href="#">Sapatos</a>
+										<ul class="cute">
+											<li class="subitem1"><a href="../front-end/detalhe-view.phtml">Masculino </a></li>
+											<li class="subitem2"><a href="../front-end/detalhe-view.phtml">Feminino </a></li>
+											<li class="subitem3"><a href="../front-end/detalhe-view.phtml">Promoção </a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+		<!--//menu-->
+		<!--seller-->
+						<div class="product-bottom">
+								<h3 class="cate">Mais Vendidos</h3>
+							<div class="product-go">
+								<div class=" fashion-grid">
+									<a href="../front-end/detalhe-view.phtml"><img class="img-responsive " src="<?= $frontEndUrl ?>/images/pr.jpg" alt=""></a>	
+								</div>
+								<div class=" fashion-grid1">
+									<h6 class="best2"><a href="../front-end/detalhe-view.phtml" >Camisa Dudalina suave de linho com algodão	  </a></h6>
+									<span class=" price-in1"> R$40.00</span>
+								</div>	
+								<div class="clearfix"> </div>
+							</div>
+							<div class="product-go">
+								<div class=" fashion-grid">
+									<a href="../front-end/detalhe-view.phtml"><img class="img-responsive " src="<?= $frontEndUrl ?>/images/pr1.jpg" alt=""></a>	
+								</div>
+								<div class=" fashion-grid1">
+									<h6 class="best2"><a href="../front-end/detalhe-view.phtml" >Camisa Dudalina suave de linho com algodão	  </a></h6>
+									<span class=" price-in1"> R$40.00</span>
+								</div>	
+								<div class="clearfix"> </div>
+							</div>
+							<div class="product-go">
+								<div class=" fashion-grid">
+									<a href="../front-end/detalhe-view.phtml"><img class="img-responsive " src="<?= $frontEndUrl ?>/images/pr2.jpg" alt=""></a>	
+								</div>
+								<div class=" fashion-grid1">
+									<h6 class="best2"><a href="../front-end/detalhe-view.phtml" >Camisa Dudalina suave de linho com algodão	  </a></h6>
+									<span class=" price-in1"> R$40.00</span>
+								</div>	
+								<div class="clearfix"> </div>
+							</div>	
+							<div class="product-go">
+								<div class=" fashion-grid">
+									<a href="../front-end/detalhe-view.phtml"><img class="img-responsive " src="<?= $frontEndUrl ?>/images/pr3.jpg" alt=""></a>	
+								</div>
+								<div class=" fashion-grid1">
+									<h6 class="best2"><a href="../front-end/detalhe-view.phtml" >Camisa Dudalina suave de linho com algodão	  </a></h6>
+									<span class=" price-in1"> R$40.00</span>
+								</div>	
+								<div class="clearfix"> </div>
+							</div>		
+						</div>
+
+		<!--//seller-->
+		<!--tag-->
+						<div class="tag">	
+								<h3 class="cate">Tags</h3>
+							<div class="tags">
+								<ul>
+									<li><a href="#">design</a></li>
+									<li><a href="#">fashion</a></li>
+									<li><a href="#">lorem</a></li>
+									<li><a href="#">dress</a></li>
+									<li><a href="#">fashion</a></li>
+									<li><a href="#">dress</a></li>
+									<li><a href="#">design</a></li>
+									<li><a href="#">dress</a></li>
+									<li><a href="#">design</a></li>
+									<li><a href="#">fashion</a></li>
+									<li><a href="#">lorem</a></li>
+									<li><a href="#">dress</a></li>
+								<div class="clearfix"> </div>
+								</ul>
+						</div>					
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+	</div>
+</div>	
+<!--footer-->
+<?php include '../front-end/footer-view.phtml'; ?>
+<!--footer-->
